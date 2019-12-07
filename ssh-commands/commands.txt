@@ -1,1 +1,44 @@
-test
+TOC
+
+How keys look like?
+For those who are new to keys management, lets look at sample keys first. 
+
+Private key (.pem file extension)
+-----BEGIN RSA PRIVATE KEY-----
+Proc-Type: 4,ENCRYPTED
+DEK-Info: DES-EDE3-CBC,32495A90F3FF199D
+lrMAsSjjkKiRxGdgR8p5kZJj0AFgdWYa3OT2snIXnN5+/p7j13PSkseUcrAFyokc
+....... 
+ijohxY3PHruU4vVZa37ITQnco9az6lsy18vbU0bOyK2fEZ2R9XVO8fH11jiV8oGH
+-----END RSA PRIVATE KEY-----
+
+and Public key looks like
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxzYuc22QSst/dS7geYYK
+.....
+r3F7aM9YpErzeYLrl0GhQr9BVJxOvXcVd4kmY+XkiCcrkyS1cnghnllh+LCwQu1s
+YwIDAQAB
+-----END PUBLIC KEY-----
+
+Note: 
+Notice, begining line & ending line of each file. Thats how you know, whether you looking at private key or public key. 
+
+How to generate keys. 
+Depending upon operating system, there are many different ways. 
+Linux (or alike ), they come with many utilities out-of-box. 
+1. ssh-keygen
+2. openssl
+
+In Windows OS, you can use puttygen (google it, to download, putty* tools)
+
+Different types of keys
+Keys can be categoried based on algorithm and strength. 
+Algorithms are like RSA or EC
+And strength is number field like 64 / 128 / 256 /512 / 1024 / 2048 / 4096 .. 
+Higher the strength, more difficult to crack that key. Hence you 
+EC
+
+Most common is RSA. But these days, EC is being preferred for it's speed and more security. 
+
+
+How to use ssh-keygen
